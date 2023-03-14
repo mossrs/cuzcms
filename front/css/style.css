@@ -1,0 +1,20 @@
+/*
+1，学工管理 请将第 8、9 行代码”取消注释“用以显现学工管理界面所依附的 div 标签
+2，教务管理 请将第 13、14 行代码“取消注释”用以显现教务管理界面所依附的 div 标签
+3，寝室管理 请将第 18、19 行代码“取消注释”用以显现寝室管理界面所依附的 div 标签
+*/
+.shawdleBlue{
+    background-color: #ebf9fe;
+    /* opacity: 1;
+    transform: rotate(90deg); */
+}
+.shawdleYellow{
+    background-color: #fbf7f0;
+    /* opacity: 1;
+    transform: rotate(90deg); */
+}
+.shawdleRed{
+    background-color: #fff1f7;
+    /* opacity: 1;
+    transform: rotate(90deg); */
+}

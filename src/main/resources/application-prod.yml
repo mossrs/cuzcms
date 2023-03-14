@@ -1,0 +1,77 @@
+server:
+  port: 8022
+  servlet:
+    context-path: /cuzcms
+
+spring:
+  main:
+    banner-mode: off
+  config:
+    activate:
+      on-profile: prod
+  # mysql连接池
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://1.117.80.52:3306/cuzcms?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+      username: cuzcms
+      password: hhjyAkTh2yWNN8Li
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+  # 一般统一规定前端传来的时间格式化字符串 因此配置此项
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss
+      date: yyyy-MM-dd
+      time: HH:mm:ss
+  # 此项是配置项目json与对象之间转换问题 但我们一版新建一个ObjectMapper来配置java对象与json之间的转换
+  jackson:
+    locale: zh_CN
+    time-zone: GMT+8
+
+# mybatis-plus全局基础配置
+mybatis-plus:
+  type-aliases-package: com.moss.cuzcms
+  mapper-locations: classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml, com/moss/cuzcms/*.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      table-prefix: t_
+      table-underline: true
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+
+# actable配置
+actable:
+  table:
+    auto: update
+  model:
+    pack: com.moss.cuzcms
+  database:
+    type: mysql
+
+# 日志
+logging:
+  level:
+    root: info
+  logback:
+    rollingpolicy:
+      file-name-pattern: logs/app-%d-%i.log
+      max-history: 15
+      max-file-size: 100MB
+  file:
+    name: logs/app.log
+
+sa-token:
+  token-name: token
+  timeout: 604800 # 7天
+  is-share: false
+  token-style: random-128
+  is-print: false
+  basic: sys:sys

@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("../img/log/imgBackground.jpg");
+}
+.winLog {
+	background-color: aliceblue;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+.imgRight {
+	height: 400px;
+}
+.textLeftTop {
+	display: inline-block;
+	position: absolute;
+	left: 40px;
+	top: 35px;
+	font-size: 20px;
+	font-weight: 400;
+}
+.textLeftBtm {
+	display: inline-block;
+	position: absolute;
+	left: 50px;
+	top: 65px;
+	font-weight: 400;
+	font-size: 12px;
+}
+.textRight {
+	display: inline-block;
+	top: 35px;
+	font-size: 14px;
+	left: 285px;
+	position: absolute;
+	color: #419dff;
+}
+.inputText {
+	display: inline-block;
+	position: absolute;
+	margin-left: 40px;
+	height: 40px;
+	border: #dcdcdc solid 1px;
+	border-radius: 5px;
+	padding-left: 40px;
+	width: 230px;
+	outline-color: #409ffd;
+}
+.textRightBtn {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	color: #bcbcbc;
+	user-select: none;
+	margin-left: 5px;
+}
+.inputText:hover {
+	border: #409ffd solid 1px;
+}
+.chackRight {
+	position: absolute;
+	display: inline-block;
+	top: 240px;
+	margin-left: 40px;
+}
+.btnRight {
+	width: 275px;
+	height: 40px;
+	background-color: #409ffd;
+	color: #f0f8ff;
+	font-size: 14px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	position: absolute;
+	bottom: 90px;
+	margin-left: 40px;
+	transition: 0.2s;
+}
+input::-webkit-input-placeholder {
+	color: #bfbfbf;
+	font-size: 13px;
+}
+.imgUser {
+	height: 20px;
+	position: absolute;
+	display: inline-block;
+	top: 131px;
+	margin-left: 51px;
+}
+.imgPassward {
+	height: 20px;
+	position: absolute;
+	display: inline-block;
+	top: 191px;
+	margin-left: 51px;
+}

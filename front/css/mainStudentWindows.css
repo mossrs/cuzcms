@@ -1,0 +1,800 @@
+/* //////////////////////////////
+////  显示学生信息界面
+////////////////////////////////*/
+.shawdleDIVmessageShow {
+	width: 300px;
+	height: 300px;
+	background-color: #fbfbfb;
+	position: fixed;
+	top: 250px;
+	left: 47%;
+	border: #d9e5ea solid 3px;
+	border-radius: 5px;
+	display: none;
+	opacity: 0;
+	box-shadow: #112a304d -20px 20px 15px 5px;
+}
+#shawdleDIVmessageShow01 {
+	transition: 0.4s ease;
+	margin-left: -350px;
+}
+#shawdleDIVmessageShow02 {
+	transition: 0.4s ease 0.2s;
+	margin-left: 50px;
+}
+#shawdleDIVmessageShow01 div {
+	height: 45px;
+	border-bottom: #d9e5ea solid 3px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#shawdleDIVmessageShow02 div {
+	height: 45px;
+	border-bottom: #d9e5ea solid 3px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#shawdleDIVmessageShow01 h1:nth-child(1) {
+	font-size: 20px;
+	line-height: 45px;
+	margin-left: 20px;
+	color: #537279;
+	font-weight: 400;
+}
+#shawdleDIVmessageShow02 h1:nth-child(1) {
+	font-size: 20px;
+	line-height: 45px;
+	margin-left: 20px;
+	color: #537279;
+	font-weight: 400;
+}
+#shawdleDIVmessageShow01 h1:nth-child(2),
+#shawdleDIVmessageShow01 h1:nth-child(5),
+#shawdleDIVmessageShow01 h1:nth-child(8) {
+	font-size: 15px;
+	line-height: 45px;
+	margin-left: 25px;
+	font-weight: 400;
+	color: #537279;
+	display: inline-block;
+}
+#shawdleDIVmessageShow02 h1:nth-child(2),
+#shawdleDIVmessageShow02 h1:nth-child(5),
+#shawdleDIVmessageShow02 h1:nth-child(8) {
+	font-size: 15px;
+	line-height: 45px;
+	margin-left: 25px;
+	font-weight: 400;
+	color: #537279;
+	display: inline-block;
+}
+#shawdleDIVmessageShow01 h2 {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 25px;
+}
+#shawdleDIVmessageShow02 h2 {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	margin-left: 25px;
+}
+/* //////////////////////////
+///  教师界面显示学生信息
+/////////////////////////////// */
+#shawdleDIVALLpointShow {
+	transition: 0.4s ease;
+	position: fixed;
+	width: 1350px;
+	height: 410px;
+	top: 250px;
+	left: 50%;
+	margin-left: -650px;
+	border-radius: 8px;
+	background-color: #fbfbfb;
+	overflow-y: scroll;
+	border: #e7e4dd solid 5px;
+	display: none;
+	opacity: 0;
+}
+table thead tr td {
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	border-width: 0px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table tbody tr td {
+	text-align: center;
+	font-family: verdana, arial, sans-serif;
+	font-size: 13px;
+	border-width: 0px;
+	padding: 2px;
+	border-style: solid;
+	background-color: #ffffff;
+	border-bottom: #efefefcc solid 1px;
+}
+table tbody tr td img {
+	height: 20px;
+	cursor: pointer;
+	margin: 4px;
+}
+table {
+	border: #fbf7f0 solid 2px;
+	margin: 0 auto;
+}
+.shawdleDIVmessageShowBtn {
+	position: fixed;
+	bottom: 30px;
+	width: 80px;
+	height: 33px;
+	background-color: #7a3826;
+	color: #fbfbfb;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+	opacity: 0;
+}
+.shawdleDIVmessageShowText {
+	position: fixed;
+	bottom: 29px;
+	width: 60px;
+	height: 33px;
+	left: 50%;
+	margin-left: -45px;
+	border-radius: 2px;
+	border: #e7e4dd solid 1px;
+	transition: 0.3s;
+	outline-color: #7a3826;
+	color: #7a3826;
+	text-align: center;
+	font-size: 14px;
+}
+.shawdleDIVmessageShowText:hover {
+	border: #999690 solid 1px;
+}
+.shawdleDIVmessageShowTextMax {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	font-weight: 400;
+	color: #7a3826;
+	line-height: 35px;
+	font-size: 15px;
+	margin-left: 25px;
+}
+.allStudentChangeWindow {
+	width: 450px;
+	height: 300px;
+	background-color: black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -225px;
+	border-radius: 5px;
+	border: #6e3b21 solid 3px;
+	background-color: #fbf7f0;
+	box-shadow: 2px 4px 6px 1px #aeaeae;
+	display: none;
+}
+.allStudentChangeWindow h2 {
+	font-weight: 400;
+	font-size: 13px;
+	display: inline-block;
+	margin: 15px 10px 15px 50px;
+}
+.allStudentChangeWindow h2:nth-child(3),
+.allStudentChangeWindow h2:nth-child(5),
+.allStudentChangeWindow h2:nth-child(8),
+.allStudentChangeWindow h2:nth-child(10),
+.allStudentChangeWindow h2:nth-child(13) {
+	background-color: #7a3826;
+	height: 20px;
+	padding: 3px 10px;
+	border-radius: 13px;
+	color: #ffffff;
+}
+.allStudentChangeWindow input {
+	width: 60px;
+	height: 25px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	outline-color: #7a3826;
+	color: #7a3826;
+	border-radius: 3px;
+}
+.allStudentChangeWindow img {
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
+.studentView {
+	position: absolute;
+	left: 50%;
+	margin-left: -650px;
+	display: flex;
+	justify-content: center;
+}
+.studentView div {
+	width: 230px;
+	height: 350px;
+	margin: 140px 10px;
+	border-radius: 15px;
+	border: #e7e4dd solid 10px;
+	background-color: #fbfbfb;
+}
+.studentView > div > span {
+	width: 186px;
+	height: 10px;
+	border-radius: 8px;
+	top: 150px;
+	margin: 10px 20px;
+	display: inline-block;
+	border: #6e3b21 solid 2px;
+	overflow: hidden;
+}
+.studentView > div > span > span {
+	width: 190px;
+	height: 100px;
+	margin-left: -50px;
+	display: inline-block;
+	background-image: linear-gradient(135deg, #d4b85d, #62070c);
+}
+.studentView h1 {
+	font-size: 90px;
+	margin-left: 12px;
+	margin-top: 16px;
+	color: #112a30;
+}
+.studentView h2 {
+	display: inline-block;
+	margin: 140px 30px 0px 20px;
+	font-size: 13px;
+	background-color: #112a30;
+	height: 25px;
+	color: #fbfbfb;
+	line-height: 25px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.studentView b {
+	color: #a26b3a;
+	font-size: 20px;
+}
+.messageChange {
+	height: 25px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+.messageChangeBtnCancel {
+	right: 70px;
+	transform: rotate(45deg);
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+}
+.messageChangeBtnUpload {
+	right: 30px;
+	height: 27px;
+	bottom: 21px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+	display: none;
+}
+.allStudentMessageBtn {
+	position: fixed;
+	bottom: 30px;
+	width: 80px;
+	height: 33px;
+	background-color: #1f4852;
+	color: #fbfbfb;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+	opacity: 0;
+}
+#allStudentMessageBlank {
+	transition: 0.4s ease;
+	position: fixed;
+	width: 1350px;
+	height: 410px;
+	top: 250px;
+	left: 50%;
+	margin-left: -650px;
+	border-radius: 8px;
+	background-color: #fbfbfb;
+	overflow-y: scroll;
+	border: #d9e5ea solid 5px;
+	display: none;
+	opacity: 0;
+}
+.allStudentMessageChangeWindow {
+	width: 450px;
+	height: 300px;
+	background-color: black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -225px;
+	border-radius: 5px;
+	border: #112a30 solid 3px;
+	background-color: #ebf9fe;
+	box-shadow: 2px 4px 6px 1px #aeaeae;
+	display: none;
+}
+.allStudentMessageChangeWindow h2 {
+	font-weight: 400;
+	font-size: 13px;
+	display: inline-block;
+	margin: 15px 10px 15px 50px;
+}
+.allStudentMessageChangeWindow h2:nth-child(3),
+.allStudentMessageChangeWindow h2:nth-child(5),
+.allStudentMessageChangeWindow h2:nth-child(8),
+.allStudentMessageChangeWindow h2:nth-child(11) {
+	background-color: #1a4753;
+	height: 20px;
+	padding: 3px 10px;
+	border-radius: 13px;
+	color: #ffffff;
+}
+.allStudentMessageChangeWindow input {
+	width: 50px;
+	height: 25px;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	outline-color: #112a30;
+	color: #112a30;
+	border-radius: 3px;
+}
+.allStudentMessageChangeWindow img {
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
+.allStudentMessageShowTextMax {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	font-weight: 400;
+	color: #7a3826;
+	line-height: 35px;
+	font-size: 15px;
+	margin-left: 25px;
+}
+.allStudentMessageShowText {
+	position: fixed;
+	bottom: 29px;
+	width: 60px;
+	height: 33px;
+	left: 50%;
+	margin-left: -45px;
+	border-radius: 2px;
+	border: #e7e4dd solid 1px;
+	transition: 0.3s;
+	outline-color: #1f4852;
+	color: #1f4852;
+	text-align: center;
+	font-size: 14px;
+}
+.allStudentMessageShowText:hover {
+	border: #1f4852 solid 1px;
+}
+.allStudentMessageShowTextMax {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	font-weight: 400;
+	color: #1f4852;
+	line-height: 35px;
+	font-size: 15px;
+	margin-left: 25px;
+}
+
+.allStudenRoomBtn {
+	position: fixed;
+	bottom: 30px;
+	width: 80px;
+	height: 33px;
+	background-color: #a34568;
+	color: #fbfbfb;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+	opacity: 0;
+}
+#allStudentRoomBlank {
+	transition: 0.4s ease;
+	position: fixed;
+	width: 1350px;
+	height: 410px;
+	top: 250px;
+	left: 50%;
+	margin-left: -650px;
+	border-radius: 8px;
+	background-color: #fbfbfb;
+	overflow-y: scroll;
+	border: #ebdee4 solid 5px;
+	display: none;
+	opacity: 0;
+}
+.allRoomChangeWindow {
+	width: 250px;
+	height: 300px;
+	background-color: black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -125px;
+	border-radius: 5px;
+	border: #73393e solid 3px;
+	background-color: #fff1f7;
+	box-shadow: 2px 4px 6px 1px #aeaeae;
+	display: none;
+}
+.allRoomChangeWindow h2 {
+	font-weight: 400;
+	font-size: 13px;
+	display: inline-block;
+	margin: 15px 10px 15px 30px;
+}
+.allRoomChangeWindow h2:nth-child(3),
+.allRoomChangeWindow h2:nth-child(6),
+.allRoomChangeWindow h2:nth-child(9) {
+	background-color: #73393e;
+	height: 20px;
+	padding: 3px 10px;
+	border-radius: 13px;
+	color: #ffffff;
+	margin-left: 50px;
+}
+.allRoomChangeWindow input {
+	width: 50px;
+	height: 25px;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	outline-color: #73393e;
+	color: #73393e;
+	border-radius: 5px;
+}
+.allRoomChangeWindow img {
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
+.allStudentRoomShowTextMax {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	font-weight: 400;
+	color: #a34568;
+	line-height: 35px;
+	font-size: 15px;
+	margin-left: 25px;
+}
+.allStudentRoomShowText {
+	position: fixed;
+	bottom: 29px;
+	width: 60px;
+	height: 33px;
+	left: 50%;
+	margin-left: -45px;
+	border-radius: 2px;
+	border: #e7e4dd solid 1px;
+	transition: 0.3s;
+	outline-color: #a34568;
+	color: #a34568;
+	text-align: center;
+	font-size: 14px;
+}
+.allStudentRoomShowText:hover {
+	border: #a34568 solid 1px;
+}
+.circle {
+	width: 1000px;
+	height: 1000px;
+	border: 150px solid rgb(202, 80, 139, 0.3);
+	border-radius: 50%;
+	position: fixed;
+	bottom: -1000px;
+	left: 50%;
+	margin-left: -650px;
+	transition: 0.4s ease;
+	display: none;
+	opacity: 0;
+}
+.studentRoomSelf {
+	height: 270px;
+	width: 200px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: -10%;
+	left: 5%;
+	transition: 0.6s ease;
+	transform: rotate(-90deg);
+	opacity: 0;
+	border-radius: 14px;
+	border: #f0dce6 solid 10px;
+}
+.studentRoomSelf h3 {
+	font-weight: 600;
+	margin-left: 5px;
+	margin-top: 12px;
+	font-size: 60px;
+	color: #9e2d4a;
+	display: inline-block;
+}
+.studentRoomSelf b {
+	font-size: 15px;
+}
+.studentRoomSelf p {
+	display: inline-block;
+	color: #fbfbfb;
+	font-size: 8px;
+	font-weight: 600;
+}
+.studentRoomSelf h4 {
+	margin: 0px 15px;
+	color: #9e2d4a;
+}
+
+.allStudentClassBtn {
+	position: fixed;
+	bottom: 30px;
+	width: 80px;
+	height: 33px;
+	background-color: #7a3826;
+	color: #fbfbfb;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+	opacity: 0;
+}
+#allStudentClassBlank {
+	transition: 0.4s ease;
+	position: fixed;
+	width: 1350px;
+	height: 410px;
+	top: 250px;
+	left: 50%;
+	margin-left: -650px;
+	border-radius: 8px;
+	background-color: #fbfbfb;
+	overflow-y: scroll;
+	border: #ebdee4 solid 5px;
+	display: none;
+	opacity: 0;
+}
+.allStudentClassChangeWindow {
+	width: 250px;
+	height: 300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -125px;
+	border-radius: 5px;
+	border: #7a3826 solid 3px;
+	background-color: #fbf7f0;
+	box-shadow: 2px 4px 6px 1px #aeaeae;
+	display: none;
+}
+.allStudentClassChangeWindow h2 {
+	font-weight: 400;
+	font-size: 13px;
+	display: inline-block;
+	margin: 15px 10px 15px 30px;
+}
+.allStudentClassChangeWindow h2:nth-child(3),
+.allStudentClassChangeWindow h2:nth-child(6) {
+	background-color: #7a3826;
+	height: 20px;
+	padding: 3px 10px;
+	border-radius: 13px;
+	color: #ffffff;
+	margin-left: 30px;
+}
+.allStudentClassChangeWindow h2:nth-child(4) {
+	font-weight: 400;
+	font-size: 20px;
+	display: inline-block;
+	line-height: 20px;
+	padding: 3px 10px;
+	margin: -10px 0 0 0px;
+	color: #7a3826;
+}
+.allStudentClassChangeWindow input {
+	height: 20px;
+	display: inline-block;
+	margin-top: 50px;
+}
+.allStudentClassChangeWindow img {
+	height: 30px;
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
+.allStudentClassTextAndMax {
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	font-weight: 400;
+	color: #7a3826;
+	line-height: 35px;
+	font-size: 15px;
+	margin-left: 25px;
+}
+.allStudentClassShowText {
+	position: fixed;
+	bottom: 29px;
+	width: 60px;
+	height: 33px;
+	left: 50%;
+	margin-left: -45px;
+	border-radius: 2px;
+	border: #e7e4dd solid 1px;
+	transition: 0.3s;
+	outline-color: #7a3826;
+	color: #7a3826;
+	text-align: center;
+	font-size: 14px;
+}
+.allStudentClassShowText:hover {
+	border: #7a3826 solid 1px;
+}
+
+input[type="radio"] + label:before {
+	content: "";
+	display: inline-block;
+	border-radius: 100%;
+	width: 7px;
+	height: 7px;
+	border: 1.8px solid #d9d9d9;
+	margin: 3px;
+	margin-bottom: -0.5px;
+}
+input[type="radio"]:checked + label:before {
+	border: 2px solid #7a3826;
+}
+.div-useto-leave {
+	display: inline-block;
+	width: 70px;
+}
+label {
+	font-size: 13.5px;
+	color: #369044;
+	transition: all 0.3s;
+	margin-right: 10px;
+}
+input[type="radio"] {
+	display: none;
+}
+.studentSelfClassBlankItem {
+	height: 120px;
+	width: 120px;
+	background-image: linear-gradient(135deg, #b5691d, #242121);
+	position: fixed;
+	border-radius: 30%;
+	top: 50%;
+	left: 45%;
+	margin-left: -60px;
+	margin-top: -100px;
+	transition: 0.3s;
+	cursor: pointer;
+	z-index: 99;
+}
+.studentSelfClassBlankItem h1,
+.studentSelfClassBlankItemShadow h1 {
+	line-height: 120px;
+	text-align: center;
+	font-size: 22px;
+	color: #fbfbfb;
+}
+.studentSelfClassBlankItemShadow {
+	height: 120px;
+	width: 120px;
+	background-image: linear-gradient(135deg, #b5691d, #242121);
+	position: fixed;
+	border-radius: 30%;
+	top: 50%;
+	left: 45%;
+	margin-left: -60px;
+	margin-top: -100px;
+	box-shadow: 0px 5px 8px 1px;
+	transition: 0.3s;
+	cursor: pointer;
+	box-shadow: 0px 5px 8px 1px;
+	z-index: 98;
+}
+.studentSelfClassBlankText {
+	position: fixed;
+	top: 50%;
+	left: 45%;
+	margin-left: -60px;
+	margin-top: -90px;
+	font-size: 11px;
+	color: #3d2d21;
+}
+#studentSelfClassBlank {
+	transition: 0.3s ease;
+	display: none;
+	opacity: 0;
+}
+.studentSelfClassBlankChangeWindow {
+	width: 400px;
+	height: 300px;
+	background-color: #e6e3dc;
+	border: #3d2e21 solid 5px;
+	border-radius: 10px;
+	position: fixed;
+	top: 52%;
+	left: 50%;
+	margin-top: -130px;
+	margin-left: -200px;
+	z-index: 100;
+	transition: 0.3s ease;
+	display: none;
+	opacity: 0;
+}
+.studentSelfClassBlankChangeWindow h2 {
+	color: #3d2d21;
+	font-size: 22px;
+	margin: 15px 20px;
+}
+.studentSelfClassBlankChangeWindow h3 {
+	font-size: 14px;
+	color: #3d2d21;
+	margin: 3px 28px;
+}
+.studentSelfClassBlankChangeWindow input[type="text"] {
+	width: 200px;
+	height: 23px;
+	margin: 3px 28px;
+	border-radius: 3px;
+	padding-left: 10px;
+	color: #3d2d21;
+}
+.studentSelfClassBlankChangeWindow textarea {
+	width: 324px;
+	height: 80px;
+	margin: 3px 28px;
+	border-radius: 5px;
+	border: #3d2d21 solid 2px;
+	resize: none;
+	padding: 4px 10px;
+	color: #3d2d21;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.studentSelfClassBlankChangeWindow img {
+	position: absolute;
+	bottom: 20px;
+	cursor: pointer;
+}
